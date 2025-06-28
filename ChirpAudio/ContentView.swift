@@ -1,24 +1,25 @@
-//
-//  ContentView.swift
-//  ChirpAudio
-//
-//  Created by Karim Abdul on 6/28/25.
-//
-
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
-    }
-}
+    @State private var selectedTab = "Transmitter"
 
-#Preview {
-    ContentView()
+    var body: some View {
+        NavigationView {
+            VStack {
+                Picker("Mode", selection: $selectedTab) {
+                    Text("Transmitter").tag("Transmitter")
+                    Text("Receiver").tag("Receiver")
+                }
+                .pickerStyle(SegmentedPickerStyle())
+                .padding()
+
+                if selectedTab == "Transmitter" {
+                    ChirpTransmitterView()
+                } else {
+                    ChirpReceiverView()
+                }
+            }
+            .navigationTitle("Chirp Communicator")
+        }
+    }
 }

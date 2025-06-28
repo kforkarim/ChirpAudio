@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A792AE072E1087F300A48582 /* README.MD in Resources */ = {isa = PBXBuildFile; fileRef = A792AE062E1087F300A48582 /* README.MD */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		A792ADDE2E1081BB00A48582 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +31,7 @@
 		A792ADCD2E1081B900A48582 /* ChirpAudio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChirpAudio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A792ADDD2E1081BB00A48582 /* ChirpAudioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChirpAudioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A792ADE72E1081BB00A48582 /* ChirpAudioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChirpAudioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A792AE062E1087F300A48582 /* README.MD */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.MD; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -75,6 +80,7 @@
 		A792ADC42E1081B900A48582 = {
 			isa = PBXGroup;
 			children = (
+				A792AE062E1087F300A48582 /* README.MD */,
 				A792ADCF2E1081B900A48582 /* ChirpAudio */,
 				A792ADE02E1081BB00A48582 /* ChirpAudioTests */,
 				A792ADEA2E1081BB00A48582 /* ChirpAudioUITests */,
@@ -212,6 +218,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A792AE072E1087F300A48582 /* README.MD in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
